@@ -1,0 +1,51 @@
+- var local_header={}
+- local_header['images']={}
+- local_header.images['logo']='images/global/'+'tcs.png'
+- local_header.images['imagen1']='images/global/'+'tcs-home-background-image.jpg'
+header
+  .main-header
+    .container
+      .row
+        .col-8
+          ul.date-phone
+            li
+              span.icon-date
+              p S&aacute;bado 11 de Noviembre de 2017
+            li
+              span.icon-phone 
+              p Tel:. (+52) 443 334 1071
+        .col-4
+          ul.social-networks
+            li
+              a(href="#") 
+                span.icon-facebook
+            li
+              a(href="#") 
+                span.icon-twitter
+            li
+              a(href="#") 
+                span.icon-instagran
+  .menu-principal
+    .container
+      .row
+        .col-2.content-logo
+          if home
+            h1
+              img.logo(src=local_header.images.logo, alt="Terminal Central del Sur")
+          else
+            a(href="#")
+              img.logo(src=local_header.images.logo, alt="Terminal Central del Sur")
+        .col-10
+          nav.menu
+            ul
+              li
+                a(href="#") Acerca de
+              li
+                a(href="#") Servicios
+              li
+                a(href="#") Facturaci&oacute;n
+              li
+                a(href="#") Contacto
+              li
+                a(href="#") Nuestras Rutas      
+                    

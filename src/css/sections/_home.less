@@ -1,0 +1,54 @@
+.slider{
+    height: 600px;
+    margin-bottom: 0;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    .slide{
+      background: tomato;
+      height: 100%; 
+      position: absolute;
+      top: 0;
+      width: 100%;
+      img{
+        position: absolute;
+        top: 0;
+        width: 1920px;  
+        left: 50%;
+        margin-left: -960px;
+       }
+      .title{
+          position: absolute;  
+          width: 100%;
+          text-align: center;
+          bottom: 30px;
+          h3{
+            color:white;
+            font-size: 30px;
+            font-weight: bold;
+          }
+       }
+     }
+    .bullets{
+      position: absolute;
+      top:90%;
+      z-index: 5;
+      width: 100%;
+      text-align: center;
+      ul{
+        padding:0px;
+        >li{
+          list-style: none;
+          display: inline-block;      
+          border: 2px solid red;
+          border-radius: 50%;
+          height: 12px;
+          width: 12px;
+          background: white;
+          text-indent: 100px;
+          margin-left: 10px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
