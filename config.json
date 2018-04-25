@@ -1,0 +1,95 @@
+{
+    "name": "Folder Structure",
+    "version": "1.0",
+    "folders": {
+      "dist": {
+        "dev": {
+          "_files": [{"name": "index.html"}],
+          "css":{
+            "_files": [{"name": "style.css"}],
+            "assets":{
+              "backgrounds": "",
+              "fonts": "",
+              "icons": ""
+            }
+          },
+          "images": {
+            "global": ""
+          },
+          "js": {
+            "_files": [{"name": "main.js"}],
+            "components": "",
+            "global": "",
+            "libs": "",
+            "plugins": "",
+            "sections": ""
+          },
+          "sections": ""
+        },
+        "prod": {
+          "_files": [{"name": "index.html"}],
+          "css":{
+            "_files": [{"name": "style.min.css"}],
+            "assets":{
+              "backgrounds": "",
+              "fonts": "",
+              "icons": ""
+            }
+          },
+          "images": {
+            "global": ""
+          },
+          "js": {
+            "_files": [{"name": "main.min.js"}],
+            "components": "",
+            "global": "",
+            "libs": "",
+            "plugins": "",
+            "sections": ""
+          },
+          "sections": ""
+        }
+      },
+      "src": {
+        "css": {
+          "_files": [{"name": "style.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/style.less"}],
+          "config": {
+            "_files": [{"name": "_variables.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/config/_variables.less"}]
+          },
+          "base": {
+            "_files": [{"name": "_document.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/base/_document.less"}, {"name": "_embedded.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/base/_embedded.less"}, {"name": "_sections.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/base/_sections.less"},{"name": "_grouping.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/base/_grouping.less"},{"name": "_forms.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/base/_forms.less"},{"name": "_text.less", "template": ""},{"name": "_table.less", "template": ""}, {"name": "_interactive.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/base/_interactive.less"}, {"name": "_links.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/base/_links.less"}, {"name": "_scripting.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/base/_scripting.less"}]
+          },
+          "layout":{
+            "_files": [{"name": "_grid.less", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/css/layout/_grid.less"}]
+          },
+          "sections":{
+            "_files": [{"name": "_toolkit.less", "template": ""}]
+          },
+          "components": "",
+          "theme": {
+            "_files": [{"name": "_header.less", "template": ""},{"name": "_footer.less", "template": ""}]
+          }
+        },
+        "html":{
+          "_files": [{"name": "index.pug", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/html/index.pug"}],
+          "config": {
+            "_files": [{"name": "_variables.pug", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/html/config/_variables.pug"}]
+          },
+          "mixins": "",
+          "sections": {
+            "_files": [{"name": "toolkit.pug", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/html/sections/toolkit.pug"}]
+          },
+          "template": {
+            "_files": [{"name": "_footer.pug", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/html/template/_footer.pug"},{"name": "_head.pug", "template": "https://raw.githubusercontent.com/webcoder/ayodhya/master/src/html/template/_head.pug"},{"name": "_header.pug", "template": ""}]
+          }
+        },
+        "js": {
+          "global": "",
+          "libs": "",
+          "plugins": "",
+          "controllers": ""
+        }
+      }
+    }
+  }
+  
