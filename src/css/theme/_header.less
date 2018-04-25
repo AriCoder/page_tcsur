@@ -4,14 +4,14 @@ header{
   left: 0;
   top: 0px;
   z-index: 1;
-  background: rgba(255,255,255,0.5); 
+  background:rgba(red(@base-color),green(@base-color),blue(@base-color),0.5); 
 }
 .main-header{
   right: 0px;
   left: 0px;
   margin: 0px;
   padding: 0px; 
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid @icon-color;
 }
 .date-phone{
   text-align: left;
@@ -32,50 +32,84 @@ header{
 }
 .icon-date,
 .icon-phone{
-  color: red;
+  color: @brand-color;
 }
 .menu{
    margin: 0px;
    text-align: right;
-  li{
-    display: inline-block;
-    margin-left: 20px;
-    a{     
-      padding: 12px;
-      &:hover{
-        border-radius: 15px;
-        background: red;
-        color: white;
+  >ul{
+    >li{
+      display: inline-block;
+      position: relative;
+      >a{
+        padding: 0 20px;
+        color: @accent-first-color;
+        font-weight: @bold;
+        &:hover{
+          +ul{
+            display: block;
+          }
+        }
+      }
+      >ul{
+        display: none;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        background: pink;
+        left: 0;
+        top: 33px;
+        list-style: none;
+        >li{
+          text-align: left;
+          a{
+            padding: 10px;
+            display: block;
+          }
+        }
       }
     }
   }
 }
+
 .social-networks{
   margin: 0;
   text-align: right;
+  padding: 4px 0;
   >li{
     display: inline-block;
-    margin-top: 1px;
-    margin-bottom: 1px;
     margin-right: 7px;
-    height: 26px;
     a{
+      background: silver;
       display: block;
       border-radius: 50%;
       height: 26px;
       width: 26px;
       text-align: center;
       font-size: 20px;
-      line-height: 26px;
-      &:hover{
-        background: silver;
+      line-height: 30px;
+      span{
+        color:white;
       }
-      &:active{
-        color:royalblue;
+    }
+    &:first-child{
+      a:hover{
+        background: #3b5999;
+      }
+    }
+    &:nth-child(2){
+      a:hover{
+        background: #55acee;
+      }
+    }
+    &:last-child{
+      a:hover{
+        background: #c32aa3;
       }
     }
   }
 }
+
 .content-logo{
   text-align: center;
   margin-top: 5px;

@@ -450,6 +450,17 @@ h1 {
 .icon-twitter:before {
   content: "\e910";
 }
+.btn-default {
+  border-radius: 15px;
+  background: #CC2128;
+  color: #FFFFFF;
+  padding: 8px 20px;
+  font-size: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  line-height: 15px;
+}
 header {
   position: fixed;
   right: 0;
@@ -463,7 +474,7 @@ header {
   left: 0px;
   margin: 0px;
   padding: 0px;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid #CCCCCD;
 }
 .date-phone {
   text-align: left;
@@ -484,49 +495,71 @@ header {
 }
 .icon-date,
 .icon-phone {
-  color: red;
+  color: #CC2128;
 }
 .menu {
   margin: 0px;
   text-align: right;
 }
-.menu li {
+.menu > ul > li {
   display: inline-block;
-  margin-left: 20px;
+  position: relative;
 }
-.menu li a {
-  padding: 12px;
+.menu > ul > li > a {
+  padding: 0 20px;
+  color: #1C3268;
+  font-weight: 700;
 }
-.menu li a:hover {
-  border-radius: 15px;
-  background: red;
-  color: white;
+.menu > ul > li > a:hover + ul {
+  display: block;
+}
+.menu > ul > li > ul {
+  display: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background: pink;
+  left: 0;
+  top: 33px;
+  list-style: none;
+}
+.menu > ul > li > ul > li {
+  text-align: left;
+}
+.menu > ul > li > ul > li a {
+  padding: 10px;
+  display: block;
 }
 .social-networks {
   margin: 0;
   text-align: right;
+  padding: 4px 0;
 }
 .social-networks > li {
   display: inline-block;
-  margin-top: 1px;
-  margin-bottom: 1px;
   margin-right: 7px;
-  height: 26px;
 }
 .social-networks > li a {
+  background: silver;
   display: block;
   border-radius: 50%;
   height: 26px;
   width: 26px;
   text-align: center;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 30px;
 }
-.social-networks > li a:hover {
-  background: silver;
+.social-networks > li a span {
+  color: white;
 }
-.social-networks > li a:active {
-  color: royalblue;
+.social-networks > li:first-child a:hover {
+  background: #3b5999;
+}
+.social-networks > li:nth-child(2) a:hover {
+  background: #55acee;
+}
+.social-networks > li:last-child a:hover {
+  background: #c32aa3;
 }
 .content-logo {
   text-align: center;
