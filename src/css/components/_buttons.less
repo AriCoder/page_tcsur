@@ -1,15 +1,12 @@
-.menu {
-    >ul {
-        >li {
-            >a.btn-default {
-                border-radius: 15px;
-                background: @brand-color;
-                color: @base-color;
-                padding: 8px 20px;
-                font-size: 15px;
-                appearance: none;
-                line-height: 15px;
-            }
-        }
-    }
+.btn-default {
+	border-radius: 15px;
+	background: @brand-color;
+	color: @base-color;
+	padding: 8px 20px;
+	font-size: 15px;
+	line-height: 15px;
+	appearance: none;
+	&:hover{
+		background: @accent-first-color;
+	}
 }

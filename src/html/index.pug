@@ -31,64 +31,87 @@ doctype html
 html(lang=site.lang)
   include template/_head
   body
+    -var home = true
     include template/_header 
     section.slider
       .slide
         img(src=local_header.images.imagen1)
-        .title
-          h3 Terminal Central del Sur es Vangu         
+        .container
+          h3 Terminal Central del Sur es Vanguardia         
       .slide
         img(src=local_header.images.imagen1)
-        .title
-          h3 Terminal Central del Sur es Vanguardia
+        .container
+          h3 Terminal Central del Sur es Vanguardia         
       .slide
         img(src=local_header.images.imagen1)
-        .title
-          h3 Terminal Central del Sur es Vanguardia
-      .bullets
-        ul
-          li.active 0
-          li 1
-          li 2 
+        .container
+          h3 Terminal Central del Sur es Vanguardia         
+
     section.lines
-      .section-description
-        .container
-          .row
-            h2 Nuestras Lineas
       .lines-principal
         .container
-          .row            
-            ul.col-12                
-              li.col-3  
-                .top-article
-                  img(src=local_header.images.logo, alt="ETN")
-                .bottom-article
-                  span Enlaces Terrestres Nacionales (ETN)    
-              li.col-3    
-                .top-article
-                  img(src=local_header.images.logo, alt="ETN")
-                .bottom-article
-                  span Enlaces Terrestres Nacionales (ETN)   
-              li.col-3    
-                .top-article
-                  img(src=local_header.images.logo, alt="ETN")
-                .bottom-article
-                  span Enlaces Terrestres Nacionales (ETN)    
-              li.col-3   
-                .top-article
-                  img(src=local_header.images.logo, alt="ETN")
-                .bottom-article
-                  span Enlaces Terrestres Nacionales (ETN)                                
-      .lines-detail.lines-detail-inactive
-        .container
-          .row
-            article.col-12             
+          .title-section
+            h2 Nuestras L&iacute;neas            
+          ul.row                
+            li.col-3  
+              .top-article
+                img(src=local_header.images.logo, alt="ETN")
+              .bottom-article
+                p Enlaces Terrestres Nacionales (ETN)
+                span.icon-arrow-down   
+            li.col-3    
+              .top-article
+                img(src=local_header.images.logo, alt="ETN")
+              .bottom-article
+                p Enlaces Terrestres Nacionales (ETN)
+                span.icon-arrow-down   
+            li.col-3    
+              .top-article
+                img(src=local_header.images.logo, alt="ETN")
+              .bottom-article
+                p Enlaces Terrestres Nacionales (ETN)
+                span.icon-arrow-down    
+            li.col-3   
+              .top-article
+                img(src=local_header.images.logo, alt="ETN")
+              .bottom-article
+                p Enlaces Terrestres Nacionales (ETN)
+                span.icon-arrow-down                                
+            li.col-3  
+              .top-article
+                img(src=local_header.images.logo, alt="ETN")
+              .bottom-article
+                p Enlaces Terrestres Nacionales (ETN)
+                span.icon-arrow-down   
+            li.col-3    
+              .top-article
+                img(src=local_header.images.logo, alt="ETN")
+              .bottom-article
+                p Enlaces Terrestres Nacionales (ETN)
+                span.icon-arrow-down   
+            li.col-3    
+              .top-article
+                img(src=local_header.images.logo, alt="ETN")
+              .bottom-article
+                p Enlaces Terrestres Nacionales (ETN)
+                span.icon-arrow-down    
+            li.col-3   
+              .top-article
+                img(src=local_header.images.logo, alt="ETN")
+              .bottom-article
+                p Enlaces Terrestres Nacionales (ETN)
+                span.icon-arrow-down                                
+          .information-partner
+            .row
               .col-4
                 h3 Enlaces Terrestres Nacionales (ETN)
                 ul
-                  li Telefono Taxqueña (55) 55 55 55 55
-                  li Call Center (55) 55 55 55 55
-                  li Pagina Web
+                  li 
+                    p Telefono Taxqueña (55) 55 55 55 55
+                  li 
+                    p Call Center (55) 55 55 55 55
+                  li 
+                    p Pagina Web
               .col-8
                 .container
                   .row
@@ -113,68 +136,12 @@ html(lang=site.lang)
                           img(src=local_header.images.logo, alt="ETN")
                       li.col-3
                         .image-line
-                          img(src=local_header.images.logo, alt="ETN")
-      .lines-principal
-        .container
-          .row            
-            ul.col-12                
-              li.col-3  
-                .top-article
-                  img(src=local_header.images.logo, alt="ETN")
-                .bottom-article
-                  span Enlaces Terrestres Nacionales (ETN)    
-              li.col-3    
-                .top-article
-                  img(src=local_header.images.logo, alt="ETN")
-                .bottom-article
-                  span Enlaces Terrestres Nacionales (ETN)   
-              li.col-3    
-                .top-article
-                  img(src=local_header.images.logo, alt="ETN")
-                .bottom-article
-                  span Enlaces Terrestres Nacionales (ETN)    
-              li.col-3   
-                .top-article
-                  img(src=local_header.images.logo, alt="ETN")
-                .bottom-article
-                  span Enlaces Terrestres Nacionales (ETN)                                
-      .lines-detail
-        .container
-          .row
-            article.col-12             
-              .col-4
-                h3 Enlaces Terrestres Nacionales (ETN)
-                ul
-                  li Telefono Taxqueña (55) 55 55 55 55
-                  li Call Center (55) 55 55 55 55
-                  li Pagina Web
-              .col-8
-                .container
-                  .row
-                    ul.col-12
-                      li.col-3
-                        .image-line
-                          img(src=local_header.images.logo, alt="ETN")
-                      li.col-3
-                        .image-line
-                          img(src=local_header.images.logo, alt="ETN")
-                      li.col-3
-                        .image-line
-                          img(src=local_header.images.logo, alt="ETN")
-                      li.col-3
-                        .image-line
-                          img(src=local_header.images.logo, alt="ETN")
-                      li.col-3
-                        .image-line
-                          img(src=local_header.images.logo, alt="ETN")
-                      li.col-3
-                        .image-line
-                          img(src=local_header.images.logo, alt="ETN")
+                          img(src=local_header.images.logo, alt="ETN")          
+
     section
-      .section-description
-        .container
-          .row
-            h2 Socios Comerciales
+      .container
+        .title-section
+          h2 Nuestras L&iacute;neas
       .partner-principal
         .container
           .row
@@ -185,16 +152,16 @@ html(lang=site.lang)
                 p Ubicación Dirección	Calzada Taxqueña #1320, colonia Campestre Churubusco, teléfono (55) 5689-9745 Localidad	Coyoacán, Coat of arms of Mexican Federal District.svg Ciudad de México, Flag of Mexico.svg México Datos de la estación Conexiones	Tren ligero Metro Tasqueña Líneas A y K1 del Servicio de Transportes Eléctricos del Distrito Federal N.º de andenes	35 [editar
             .col-6
               ul.logo-partners
-                li.col-6
-                  .img-partner
+                li
+                  div
                     img(src=local_header.images.logo, alt="Concesiones Exclusivas")
-                li.col-6
-                  .img-partner
+                li
+                  div
                     img(src=local_header.images.logo, alt="Grupo Comercial en Terminales")
-                li.col-6
-                  .img-partner
+                li
+                  div
                     img(src=local_header.images.logo, alt="Terminal Central del Sur")
-                li.col-6
-                  .img-partner
+                li
+                  div
                     img(src=local_header.images.logo, alt="Comercial Camionera del Sur")
     include template/_footer
