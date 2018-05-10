@@ -1,7 +1,7 @@
 - var local_header={}
 - local_header['images']={}
-- local_header.images['logo']='images/global/'+'tcs.png'
-- local_header.images['imagen1']='images/global/'+'tcs-home-background-image.jpg'
+- local_header.images['logo']=global_path+images.global+'tcs.png'
+- local_header.images['imagen1']=global_path+images.global+'tcs-home-background-image.jpg'
 header
   .main-header
     .container
@@ -39,7 +39,7 @@ header
           nav.menu
             ul
               li
-                a(href="#") Acerca de
+                a(href="../sections/about.html") Acerca de
               li
                 a(href="#") Servicios
                   ul

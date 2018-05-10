@@ -1,0 +1,66 @@
+//-Configuración y variables globales del proyecto
+include ../config/_variables
+
+//-
+  Ajustes de la configuración global para esta sección
+- global_path = '../'
+//-
+  Perfil para el tipo de archivo JS y CSS a incluir (normal o minificado)
+- current_profile = CONST_DEV_PROFILE
+//-
+  Nombre de la página
+- var page = 'Acerca de'
+//-
+  - Ejemplo de como incluir CSS por pagina
+  - var section_style = {}
+  - section_style['dev'] = 'home.css'
+  - section_style['prod'] = 'home.min.css'
+//-
+  - Ejemplo como incluir los JS por pagina
+  - var section_scripts =  {}
+  - section_scripts['dev'] = [global_path  + scripts.base + 'script_1.js', global_path  + scripts.base + 'script_2.js']
+  - section_scripts['prod'] = [global_path  + scripts.base + 'main.min.js']
+doctype html
+html(lang=site.lang)
+  include ../template/_head
+  body
+    include ../template/_header 
+    section.about
+      .container
+        .title-section
+          h2 Acerca de Nosotros
+        ul.row.top
+          li.col-4
+            h3 Vision
+            p Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". 
+          li.col-4
+            .hexagon
+              .hexagon-in
+                .hexagon-image  
+          li.col-4
+            h3 Mision
+            p Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
+        .row.bottom
+          h3 Valores
+          p Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
+    section.advertisement
+      .container
+        .title-section
+          h2 Anunciantes
+        ul.row.top-advertisement
+          li.col-3
+            img(src="http://placekitten.com/240/240", alt="")
+          li.col-3
+            img(src="http://placekitten.com/240/240", alt="")
+          li.col-3
+            img(src="http://placekitten.com/240/240", alt="")
+          li.col-3
+            img(src="http://placekitten.com/240/240", alt="")
+          li.col-6
+            img(src="http://placekitten.com/240/240", alt="")
+          li.col-3
+            img(src="", alt="")
+          li.col-3
+            img(src="http://placekitten.com/240/240", alt="")
+    include ../template/_footer
+

@@ -1,0 +1,47 @@
+section.about {
+    padding-top: 75px;
+    .top {
+        li {
+            box-sizing: border-box;
+            display: inline-block;
+            &:first-child{
+              margin-top: 80px;
+              border-top: 2px solid yellow;
+            }
+            &:last-child{
+              margin-top: 80px;
+              border-top: 2px solid olive;
+            }
+            .hexagon {
+                margin-left: auto;
+                margin-right: auto;
+                width: 250px;
+                height: 300px;
+                background-position: center;
+                overflow: hidden;
+                visibility: hidden;
+                .hexagon-in {
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    transform: rotate(60deg);
+                    overflow: hidden;
+                    .hexagon-image {
+                        width: 100%;
+                        height: 100%;
+                        background-position: center;
+                        background-image: url(http://placekitten.com/240/240);
+                        transform: rotate(60deg);
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+.bottom {
+    border-left: 2px solid blue;
+    margin-left: 50%;
+    margin-top: -18px;
+    padding-left: 10px;
+}

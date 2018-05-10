@@ -707,12 +707,12 @@ footer .col-3:last-child p {
 }
 .lines-principal ul li:after {
   display: none;
-  bottom: -10px;
+  bottom: -15px;
   content: '';
   position: absolute;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #1C3268;
+  border-bottom: 10px solid #1C3268;
   margin: auto;
 }
 .lines-principal ul li .top-article {
@@ -854,4 +854,53 @@ section.lines {
   top: 0;
   right: 0;
   z-index: 4;
+}
+section.about {
+  padding-top: 75px;
+}
+section.about .top li {
+  box-sizing: border-box;
+  display: inline-block;
+}
+section.about .top li:first-child {
+  margin-top: 80px;
+  border-top: 2px solid yellow;
+}
+section.about .top li:last-child {
+  margin-top: 80px;
+  border-top: 2px solid olive;
+}
+section.about .top li .hexagon {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 300px;
+  background-position: center;
+  overflow: hidden;
+  visibility: hidden;
+}
+section.about .top li .hexagon .hexagon-in {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+  overflow: hidden;
+}
+section.about .top li .hexagon .hexagon-in .hexagon-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url(http://placekitten.com/240/240);
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+  visibility: visible;
+}
+.bottom {
+  border-left: 2px solid blue;
+  margin-left: 50%;
+  margin-top: -18px;
+  padding-left: 10px;
 }
