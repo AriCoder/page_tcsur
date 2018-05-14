@@ -4,18 +4,18 @@ section.about {
         li {
             box-sizing: border-box;
             display: inline-block;
-            &:first-child{
-              margin-top: 80px;
-              border-top: 2px solid yellow;
+            &:first-child {
+                margin-top: 80px;
+                border-top: 2px solid yellow;
             }
-            &:last-child{
-              margin-top: 80px;
-              border-top: 2px solid olive;
+            &:last-child {
+                margin-top: 80px;
+                border-top: 2px solid olive;
             }
             .hexagon {
                 margin-left: auto;
                 margin-right: auto;
-                width: 250px;
+                width: 260px;
                 height: 300px;
                 background-position: center;
                 overflow: hidden;
@@ -38,10 +38,54 @@ section.about {
             }
         }
     }
+    .bottom {
+        border-left: 2px solid blue;
+        margin-left: 50%;
+        margin-top: -18px;
+        padding-left: 10px;
+    }
 }
-.bottom {
-    border-left: 2px solid blue;
-    margin-left: 50%;
-    margin-top: -18px;
-    padding-left: 10px;
+
+section.advertisement {
+    margin: 0;
+    padding: 0;
+    .first-images {
+        margin: 0;
+        padding: 0;
+        li {
+            box-sizing: border-box;
+            padding: 10px 10px 0 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: 250px;
+            }
+        }
+    }
+    .second-images {
+        margin: 0;
+        padding: 0;
+        .vertical-img{
+            box-sizing: border-box;
+            padding: 10px 10px 0 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: 515px;
+            }
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            li {
+                box-sizing: border-box;
+                padding: 10px 10px 0 0;
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 250px;
+                }
+            }
+        }
+    }
 }

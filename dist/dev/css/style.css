@@ -873,7 +873,7 @@ section.about .top li:last-child {
 section.about .top li .hexagon {
   margin-left: auto;
   margin-right: auto;
-  width: 250px;
+  width: 260px;
   height: 300px;
   background-position: center;
   overflow: hidden;
@@ -898,9 +898,52 @@ section.about .top li .hexagon .hexagon-in .hexagon-image {
           transform: rotate(60deg);
   visibility: visible;
 }
-.bottom {
+section.about .bottom {
   border-left: 2px solid blue;
   margin-left: 50%;
   margin-top: -18px;
   padding-left: 10px;
+}
+section.advertisement {
+  margin: 0;
+  padding: 0;
+}
+section.advertisement .first-images {
+  margin: 0;
+  padding: 0;
+}
+section.advertisement .first-images li {
+  box-sizing: border-box;
+  padding: 10px 10px 0 0;
+}
+section.advertisement .first-images li img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+}
+section.advertisement .second-images {
+  margin: 0;
+  padding: 0;
+}
+section.advertisement .second-images .vertical-img {
+  box-sizing: border-box;
+  padding: 10px 10px 0 0;
+}
+section.advertisement .second-images .vertical-img img {
+  width: 100%;
+  max-width: 100%;
+  height: 515px;
+}
+section.advertisement .second-images ul {
+  margin: 0;
+  padding: 0;
+}
+section.advertisement .second-images ul li {
+  box-sizing: border-box;
+  padding: 10px 10px 0 0;
+}
+section.advertisement .second-images ul li img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
 }
