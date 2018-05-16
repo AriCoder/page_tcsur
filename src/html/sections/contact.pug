@@ -1,0 +1,67 @@
+//-Configuración y variables globales del proyecto
+include ../config/_variables
+
+//-
+  Ajustes de la configuración global para esta sección
+- global_path = '../'
+//-
+  Perfil para el tipo de archivo JS y CSS a incluir (normal o minificado)
+- current_profile = CONST_DEV_PROFILE
+//-
+  Nombre de la página
+- var page = 'Acerca de'
+//-
+  - Ejemplo de como incluir CSS por pagina
+  - var section_style = {}
+  - section_style['dev'] = 'home.css'
+  - section_style['prod'] = 'home.min.css'
+//-
+  - Ejemplo como incluir los JS por pagina
+  - var section_scripts =  {}
+  - section_scripts['dev'] = [global_path  + scripts.base + 'script_1.js', global_path  + scripts.base + 'script_2.js']
+  - section_scripts['prod'] = [global_path  + scripts.base + 'main.min.js']
+doctype html
+html(lang=site.lang)
+  include ../template/_head
+  body
+    include ../template/_header 
+    section.contact
+      .container
+        .row
+          ul
+            li.col-4
+              .title-section
+                h2 Contacto
+              p.intro-section Para ofrecer un mejor Servicio ponemos a su disposicion este espacio para sus comentarios.
+              ul.form-contact
+                li 
+                  p Nombre:
+                li
+                  input(type="text")
+                li 
+                  p Telefono:
+                li
+                  input(type="text")
+                li 
+                  p Correo Electr&oacute;nico:
+                li
+                  input(type="text")
+                li 
+                  p Tipo de Mensaje:
+                li
+                  select(name="")
+                    option(value="0") -Seleccionar-
+                    option(value="1") -Queja-
+                li  
+                  p Comentarios: 
+                li
+                  textarea(name="", cols="30", rows="10")
+                li
+                  label(for="")
+                    input(type="checkbox", name="notification" )
+                    |Deseo ser notificadx de las acciones tomadas
+                li
+                  input(type="submit")
+            li.col-8
+              .map
+    include ../template/_footer
