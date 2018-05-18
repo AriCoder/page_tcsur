@@ -859,16 +859,16 @@ section.about {
   padding-top: 75px;
 }
 section.about .top {
-  padding-top: 20px;
+  padding-top: 86px;
   position: relative;
 }
 section.about .top .img {
   padding: 0;
   margin: 0;
   position: absolute;
-  left: 425px;
-  top: -10%;
-  width: 350px;
+  left: 440px;
+  top: 10px;
+  width: 320px;
   height: 350px;
   overflow: hidden;
 }
@@ -876,14 +876,12 @@ section.about .top .img:before {
   content: '';
   width: 0px;
   height: 0px;
-  border-left: 175px solid white;
+  border-left: 160px solid white;
   /* left arrow slant */
-  border-right: 175px solid white;
+  border-right: 160px solid white;
   /* right arrow slant */
   border-bottom: 75px solid transparent;
   /* bottom, add background color here */
-  font-size: 0px;
-  line-height: 0px;
   top: 0;
   position: absolute;
   margin-left: 0;
@@ -892,20 +890,23 @@ section.about .top .img:after {
   content: '';
   width: 0px;
   height: 0px;
-  border-left: 175px solid white;
-  /* left arrow slant */
-  border-right: 175px solid white;
-  /* right arrow slant */
+  position: absolute;
+  border-left: 160px solid white;
+  border-right: 160px solid white;
   border-top: 75px solid transparent;
-  /* bottom, add background color here */
-  font-size: 0px;
-  line-height: 0px;
-  bottom: 0;
+  bottom: 0px;
   margin-left: 0;
+  left: 0;
 }
-section.about .top > div p {
+section.about .top div:nth-of-type(2) {
+  border-top: 2px solid yellow;
+}
+section.about .top div:nth-of-type(2) p {
   margin-right: 200px;
   text-align: inherit;
+}
+section.about .top div:last-of-type {
+  border-top: 2px solid olive;
 }
 section.about .top div:last-of-type h3 {
   margin-left: 200px;
@@ -917,7 +918,55 @@ section.about .top div:last-of-type p {
   margin-right: 0;
 }
 section.about .bottom {
-  padding-top: 150px;
+  border-left: 2px solid blue;
+  padding-top: 75px;
+  margin-left: 50%;
+  padding-left: 10px;
+}
+section.advertisement .section-left {
+  padding: 0;
+  margin: 0;
+}
+section.advertisement .section-left .col-6,
+section.advertisement .section-left .col-12 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px 5px 0 5px;
+}
+section.advertisement .section-left .col-6 img,
+section.advertisement .section-left .col-12 img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+}
+section.advertisement .section-right {
+  padding: 0;
+  margin: 0;
+}
+section.advertisement .section-right div:first-of-type {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px 5px 0 5px;
+}
+section.advertisement .section-right div:first-of-type img {
+  width: 100%;
+  max-width: 100%;
+  height: 515px;
+}
+section.advertisement .section-right div:nth-of-type(2),
+section.advertisement .section-right div:nth-of-type(3) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px 5px 0 5px;
+}
+section.advertisement .section-right div:nth-of-type(2) img,
+section.advertisement .section-right div:nth-of-type(3) img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
 }
 section.contact {
   padding-top: 75px;
@@ -935,6 +984,16 @@ section.contact .form-contact {
 section.contact .form-contact li {
   padding: 0;
   margin: 0;
+}
+section.contact .form-contact li input[type='text'] {
+  width: 80%;
+  border-radius: 20px;
+  padding-left: 10px;
+  border: 1px solid blue;
+  line-height: 25px;
+}
+section.contact .form-contact li select {
+  width: 80%;
 }
 section.contact .form-contact li p {
   padding: 0;
