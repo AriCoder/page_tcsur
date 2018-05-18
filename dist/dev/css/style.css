@@ -858,94 +858,66 @@ section.lines {
 section.about {
   padding-top: 75px;
 }
-section.about .top li {
-  box-sizing: border-box;
-  display: inline-block;
+section.about .top {
+  padding-top: 20px;
+  position: relative;
 }
-section.about .top li:first-child {
-  margin-top: 80px;
-  border-top: 2px solid yellow;
-}
-section.about .top li:last-child {
-  margin-top: 80px;
-  border-top: 2px solid olive;
-}
-section.about .top li .hexagon {
-  margin-left: auto;
-  margin-right: auto;
-  width: 260px;
-  height: 300px;
-  background-position: center;
-  overflow: hidden;
-  visibility: hidden;
-}
-section.about .top li .hexagon .hexagon-in {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  -webkit-transform: rotate(60deg);
-      -ms-transform: rotate(60deg);
-          transform: rotate(60deg);
+section.about .top .img {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 425px;
+  top: -10%;
+  width: 350px;
+  height: 350px;
   overflow: hidden;
 }
-section.about .top li .hexagon .hexagon-in .hexagon-image {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-image: url(http://placekitten.com/240/240);
-  -webkit-transform: rotate(60deg);
-      -ms-transform: rotate(60deg);
-          transform: rotate(60deg);
-  visibility: visible;
+section.about .top .img:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-left: 175px solid white;
+  /* left arrow slant */
+  border-right: 175px solid white;
+  /* right arrow slant */
+  border-bottom: 75px solid transparent;
+  /* bottom, add background color here */
+  font-size: 0px;
+  line-height: 0px;
+  top: 0;
+  position: absolute;
+  margin-left: 0;
+}
+section.about .top .img:after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-left: 175px solid white;
+  /* left arrow slant */
+  border-right: 175px solid white;
+  /* right arrow slant */
+  border-top: 75px solid transparent;
+  /* bottom, add background color here */
+  font-size: 0px;
+  line-height: 0px;
+  bottom: 0;
+  margin-left: 0;
+}
+section.about .top > div p {
+  margin-right: 200px;
+  text-align: inherit;
+}
+section.about .top div:last-of-type h3 {
+  margin-left: 200px;
+  margin-right: 0;
+}
+section.about .top div:last-of-type p {
+  text-align: inherit;
+  margin-left: 200px;
+  margin-right: 0;
 }
 section.about .bottom {
-  border-left: 2px solid blue;
-  margin-left: 50%;
-  margin-top: -18px;
-  padding-left: 10px;
-}
-section.advertisement {
-  margin: 0;
-  padding: 0;
-}
-section.advertisement .first-images {
-  margin: 0;
-  padding: 0;
-}
-section.advertisement .first-images li {
-  box-sizing: border-box;
-  padding: 10px 10px 0 0;
-}
-section.advertisement .first-images li img {
-  width: 100%;
-  max-width: 100%;
-  height: 250px;
-}
-section.advertisement .second-images {
-  margin: 0;
-  padding: 0;
-}
-section.advertisement .second-images .vertical-img {
-  box-sizing: border-box;
-  padding: 10px 10px 0 0;
-}
-section.advertisement .second-images .vertical-img img {
-  width: 100%;
-  max-width: 100%;
-  height: 515px;
-}
-section.advertisement .second-images ul {
-  margin: 0;
-  padding: 0;
-}
-section.advertisement .second-images ul li {
-  box-sizing: border-box;
-  padding: 10px 10px 0 0;
-}
-section.advertisement .second-images ul li img {
-  width: 100%;
-  max-width: 100%;
-  height: 250px;
+  padding-top: 150px;
 }
 section.contact {
   padding-top: 75px;

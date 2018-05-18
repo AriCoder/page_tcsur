@@ -29,15 +29,13 @@ html(lang=site.lang)
       .container
         .title-section
           h2 Acerca de Nosotros
-        ul.row.top
-          li.col-4
+        .row.top
+          .img
+            img(src="http://placekitten.com/350/350", alt="")
+          .col-6
             h3 Vision
-            p Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". 
-          li.col-4
-            .hexagon
-              .hexagon-in
-                .hexagon-image  
-          li.col-4
+            p Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Es un hecho establecido 
+          .col-6
             h3 Mision
             p Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".
         .row.bottom
@@ -47,39 +45,20 @@ html(lang=site.lang)
       .container
         .title-section
           h2 Anunciantes
-        ul.row
-          li.col-6.first-images
-            ul
-              li.col-6
-                img(src="http://placekitten.com/420/390", alt="")
-              li.col-6
-                img(src="http://placekitten.com/350/350", alt="")
-              li.col-12
-                img(src="http://placekitten.com/800/300", alt="")
-          li.col-6.second-images
-            .vertical-img.col-6
+        .row
+          .col-6
+            .col-6
+              img(src="http://placekitten.com/420/390", alt="")
+            .col-6
+              img(src="http://placekitten.com/350/350", alt="")
+            .col-12
+              img(src="http://placekitten.com/800/300", alt="")
+          .col-6
+            .col-6
               img(src="http://placekitten.com/300/600", alt="")
-            ul
-              li.col-6
-                img(src="http://placekitten.com/400/350", alt="")
-              li.col-6   
-                img(src="http://placekitten.com/250/260", alt="")  
-        ul.row
-          li.col-6.second-images
-            .vertical-img.col-6
-              img(src="http://placekitten.com/500/800", alt="")
-            ul
-              li.col-6
-                img(src="http://placekitten.com/600/600", alt="")
-              li.col-6   
-                img(src="http://placekitten.com/500/400", alt="")  
-          li.col-6.first-images
-            ul
-              li.col-6
-                img(src="http://placekitten.com/270/330", alt="")
-              li.col-6
-                img(src="http://placekitten.com/280/350", alt="")
-              li.col-12
-                img(src="http://placekitten.com/480/400", alt="")   
+            .col-6
+              img(src="http://placekitten.com/400/350", alt="")
+            .col-6
+              img(src="http://placekitten.com/250/260", alt="")
     include ../template/_footer
 

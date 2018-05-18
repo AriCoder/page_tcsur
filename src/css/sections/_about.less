@@ -1,91 +1,62 @@
 section.about {
     padding-top: 75px;
     .top {
-        li {
-            box-sizing: border-box;
-            display: inline-block;
-            &:first-child {
-                margin-top: 80px;
-                border-top: 2px solid yellow;
-            }
-            &:last-child {
-                margin-top: 80px;
-                border-top: 2px solid olive;
-            }
-            .hexagon {
-                margin-left: auto;
-                margin-right: auto;
-                width: 260px;
-                height: 300px;
-                background-position: center;
-                overflow: hidden;
-                visibility: hidden;
-                .hexagon-in {
-                    width: 100%;
-                    height: 100%;
-                    background-position: center;
-                    transform: rotate(60deg);
-                    overflow: hidden;
-                    .hexagon-image {
-                        width: 100%;
-                        height: 100%;
-                        background-position: center;
-                        background-image: url(http://placekitten.com/240/240);
-                        transform: rotate(60deg);
-                        visibility: visible;
-                    }
-                }
-            }
-        }
-    }
-    .bottom {
-        border-left: 2px solid blue;
-        margin-left: 50%;
-        margin-top: -18px;
-        padding-left: 10px;
-    }
-}
-
-section.advertisement {
-    margin: 0;
-    padding: 0;
-    .first-images {
-        margin: 0;
-        padding: 0;
-        li {
-            box-sizing: border-box;
-            padding: 10px 10px 0 0;
-            img {
-                width: 100%;
-                max-width: 100%;
-                height: 250px;
-            }
-        }
-    }
-    .second-images {
-        margin: 0;
-        padding: 0;
-        .vertical-img{
-            box-sizing: border-box;
-            padding: 10px 10px 0 0;
-            img {
-                width: 100%;
-                max-width: 100%;
-                height: 515px;
-            }
-        }
-        ul{
-            margin: 0;
+        padding-top: 20px;
+        position: relative;
+        .img {
             padding: 0;
-            li {
-                box-sizing: border-box;
-                padding: 10px 10px 0 0;
-                img {
-                    width: 100%;
-                    max-width: 100%;
-                    height: 250px;
-                }
+            margin: 0;
+            position: absolute;
+            left: 425px;
+            top: -10%;
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            &:before{
+                content: '';
+                width:0px; 
+                height:0px; 
+                border-left:175px solid white;  /* left arrow slant */
+                border-right:175px solid white; /* right arrow slant */
+                border-bottom:75px solid transparent; /* bottom, add background color here */
+                font-size:0px;
+                line-height:0px;
+                top: 0;
+                position:absolute;
+                margin-left:0;
+            }
+            &:after{
+                content: '';
+                width:0px; 
+                height:0px; 
+                border-left:175px solid white;  /* left arrow slant */
+                border-right:175px solid white; /* right arrow slant */
+                border-top:75px solid transparent; /* bottom, add background color here */
+                font-size:0px;
+                line-height:0px;
+                bottom:0;
+                margin-left:0;
             }
         }
+        >div {
+            p {
+                margin-right: 200px;
+                text-align: inherit;
+            }
+        }
+        div:last-of-type {
+            h3 {
+                margin-left: 200px;
+                margin-right:0;
+            }
+            p {
+                text-align: inherit;
+                margin-left: 200px;
+                margin-right:0;
+            }
+        }
+    }
+    .bottom{
+        padding-top: 150px;
     }
 }
