@@ -1,7 +1,3 @@
-if section_scripts
-  - var total_scripts = section_scripts[current_profile].length
-  - for (var i = 0; i < total_scripts; i++)
-    script(type="text/javascript" src=section_scripts[current_profile][i])
 footer
   .container
     .row
@@ -16,3 +12,7 @@ footer
             a(href="#") Terminos y condiciones
       .col-3
         p © 2018 TCS Todos los derechos reservados
+if section_scripts
+  - var total_scripts = section_scripts[current_profile].length
+  - for (var i = 0; i < total_scripts; i++)
+    script(type="text/javascript" src=section_scripts[current_profile][i])

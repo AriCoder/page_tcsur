@@ -22,10 +22,11 @@ include config/_variables
   - section_scripts['dev'].push(global_path  + scripts.controllers + 'city.js')
 
 - var section_scripts =  {} 
-- section_scripts['prod'] = []
 - section_scripts['dev'] = []
-//-
-//include components/_scripts   
+- section_scripts['dev'].push( global_path  + scripts.libs + 'jquery.js')
+- section_scripts['dev'].push( global_path  + scripts.libs + 'slick.js')
+- section_scripts['dev'].push(global_path + scripts.controllers + 'home.js')
+- section_scripts['prod'] = []
 
 doctype html
 html(lang=site.lang)
