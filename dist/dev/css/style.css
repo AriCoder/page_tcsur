@@ -629,8 +629,9 @@ ul {
   margin: 0 10px;
 }
 .slick-slider .slick-dots li button {
+  background: white;
   border-radius: 50%;
-  border: none;
+  border: 2px solid red;
   cursor: pointer;
   height: 20px;
   padding: 10px;
