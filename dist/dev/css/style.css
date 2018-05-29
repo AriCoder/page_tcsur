@@ -1131,11 +1131,11 @@ section.contact .form-contact li input[type='text'] {
   width: 80%;
   border-radius: 20px;
   padding-left: 10px;
-  border: 1px solid blue;
+  border: 1px solid #1C3268;
   line-height: 30px;
 }
 section.contact .form-contact li .arrow {
-  border: 1px solid blue;
+  border: 1px solid #1C3268;
   height: 30px;
   overflow: hidden;
   width: 80%;
@@ -1156,7 +1156,7 @@ section.contact .form-contact li .arrow::after {
   text-align: center;
   width: 30px;
   height: 30px;
-  background-color: blue;
+  background-color: #1C3268;
   position: absolute;
   top: 0;
   right: 0px;
@@ -1165,7 +1165,7 @@ section.contact .form-contact li .arrow::after {
 section.contact .form-contact li textarea {
   width: 80%;
   resize: none;
-  border: 1px solid blue;
+  border: 1px solid #1C3268;
 }
 section.contact .form-contact li input[type='checkbox'] {
   color: red;
@@ -1174,8 +1174,18 @@ section.contact .form-contact li input[type='checkbox'] {
 section.contact .form-contact li p {
   padding: 0;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   text-align: left;
+}
+section.contact .form-contact li .send-contact {
+  width: 80%;
+  text-align: right;
+}
+section.contact .form-contact li .send-contact .button {
+  background: #1C3268;
+  border: 1px solid #1C3268;
+  padding: 8px 30px;
 }
 section.contact .map {
   border: 1px solid red;

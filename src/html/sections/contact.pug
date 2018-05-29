@@ -55,7 +55,7 @@ html(lang=site.lang)
                         option(value="0") -Seleccionar-
                         option(value="1") -Queja-
                   li  
-                    p Comentarios: 
+                    p Comentario: 
                   li
                     textarea(name="", cols="30", rows="10")
                   li
@@ -63,7 +63,8 @@ html(lang=site.lang)
                       input(type="checkbox", name="notification" )
                       |Deseo ser notificadx de las acciones tomadas
                   li
-                    input.btn-default(type="submit")
+                    .send-contact
+                      input.btn-default.button(type="submit")
             li.col-8
               .map
     include ../template/_footer
