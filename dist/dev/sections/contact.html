@@ -102,9 +102,14 @@
                     <textarea name="" cols="30" rows="10"></textarea>
                   </li>
                   <li>
-                    <label for="notification">
-                      <input type="checkbox" name="notification">Deseo ser notificadx de las acciones tomadas
-                    </label>
+                    <div class="notifications">
+                      <div class="col-1"> 
+                        <input type="checkbox">
+                      </div>
+                      <div class="col-11">
+                        <label>Deseo ser notificadx de las acciones tomadas                                      </label>
+                      </div>
+                    </div>
                   </li>
                   <li>
                     <div class="send-contact">
@@ -115,7 +120,16 @@
               </form>
             </li>
             <li class="col-8">
-              <div class="map"></div>
+              <div class="floating-panel"><b>Como llegar</b>
+                <select id="mode">
+                  <option value="SELECT">Seleccione una Opcion</option>
+                  <option value="DRIVING">En Auto</option>
+                  <option value="WALKING">A pie</option>
+                  <option value="TRANSIT">En Transporte Publico</option>
+                  <option value="BICYCLING">En Bicicleta</option>
+                </select>
+              </div>
+              <div class="map" id="map"></div>
             </li>
           </ul>
         </div>
@@ -138,5 +152,8 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="../js/libs/jquery.js"></script>
+    <script type="text/javascript" src="../js/controllers/contact.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm0T60hpqdmQpfZ1eGyHuNg1hR4LVuhV8&amp;callback=initMap"></script>
   </body>
 </html>

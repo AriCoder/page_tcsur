@@ -101,6 +101,7 @@
 
 .slick-slider{
     position: relative;
+    height: 600px;
     .slick-arrow{
         bottom: 0;
         height: 50px;
@@ -119,9 +120,9 @@
             left: 0;
             margin: auto;
             position: absolute;
-            text-indent: 0;
-            top: 0;
             right: 0;
+            text-indent: 0;
+            top: 0;            
             width: 40px;
         }
     }
@@ -143,9 +144,9 @@
             display: inline-block;
             margin: 0 10px;
             button{
-                background: white;
+                background: @brand-color;
                 border-radius: 50%;
-                border: 2px solid red;
+                border: 2px solid @base-color;
                 cursor: pointer;
                 height: 20px;
                 padding: 10px;
@@ -156,7 +157,8 @@
         }
         .slick-active{
             button{
-                background-color: red;
+                background-color: @base-color;
+                border: 2px solid @brand-color;
             }
         }
     }
