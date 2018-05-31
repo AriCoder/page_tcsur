@@ -3,13 +3,10 @@
 * @Author: ABC
 * 
 */
-(document).ready(function(){
-  initMap();
-  
-});
 
-//se inicializa mapa
-function initMap() {
+(function(){
+  //se inicializa mapa
+var initMap=function(){
   //utilizado para agregar las indicaciones
   var directionsDisplay = new google.maps.DirectionsRenderer;
   //servicio para indicaciones
@@ -97,3 +94,10 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   'Error: El servicio de Geolocalizacion ha sido fallida.' :
   'Error: Su navegador no soporta Geolocalizacion.');
 }
+  $(document).ready(function(){
+    initMap();    
+  });
+})();
+
+
+

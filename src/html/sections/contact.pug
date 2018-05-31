@@ -36,36 +36,30 @@ html(lang=site.lang)
     section.contact
       .container
         .row
-          ul
-            li.col-4
-              .title-section
-                h2 Contacto
-              p.intro-section Para ofrecer un mejor Servicio ponemos a su disposicion este espacio para sus comentarios.
-              form(action="")
+          .col-4
+            .title-section
+              h2 Contacto
+            form(action="")
+              fieldset
+                legend Para ofrecer un mejor Servicio ponemos a su disposicion este espacio para sus comentarios.
                 ul.form-contact
                   li 
-                    p Nombre:
-                  li
-                    input(type="text")
+                    label(for="name")  Nombre:
+                    input#name(type="text")
                   li 
-                    p Telefono:
-                  li
-                    input(type="text")
+                    label(for="tel") Telefono:
+                    input#tel(type="text")                    
                   li 
-                    p Correo Electr&oacute;nico:
+                    label(for="email") Correo Electr&oacute;nico:
+                    input#email(type="email")
                   li
-                    input(type="text")
+                    label(for="type-message") Tipo de Mensaje:
+                    select#type-message(name="")
+                      option(value="0") -Seleccionar-
+                      option(value="1") -Queja-
                   li 
-                    p Tipo de Mensaje:
-                  li
-                    .arrow
-                      select(name="")
-                        option(value="0") -Seleccionar-
-                        option(value="1") -Queja-
-                  li  
-                    p Comentario: 
-                  li
-                    textarea(name="", cols="30", rows="10")
+                    label(for="comment") Comentario:
+                    textarea#comment(name="", cols="30", rows="10")
                   li
                     .notifications
                       .col-1 
@@ -75,14 +69,14 @@ html(lang=site.lang)
                   li
                     .send-contact
                       input.btn-default.button(type="submit")
-            li.col-8
-              div.floating-panel
-                b Como llegar
-                select#mode
-                  option(value="SELECT") Seleccione una Opcion
-                  option(value="DRIVING") En Auto
-                  option(value="WALKING") A pie
-                  option(value="TRANSIT") En Transporte Publico
-                  option(value="BICYCLING") En Bicicleta
-              .map#map
+          .col-8
+            div.floating-panel
+              b Como llegar
+              select#mode
+                option(value="SELECT") Seleccione una Opcion
+                option(value="DRIVING") En Auto
+                option(value="WALKING") A pie
+                option(value="TRANSIT") En Transporte Publico
+                option(value="BICYCLING") En Bicicleta
+            .map#map
     include ../template/_footer

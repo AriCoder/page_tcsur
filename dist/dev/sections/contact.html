@@ -34,7 +34,7 @@
       <div class="menu-principal">
         <div class="container">
           <div class="row">
-            <div class="col-2 content-logo"><a href="/index.html"><img class="logo" src="../images/global/tcs.png" alt="Terminal Central del Sur"></a>
+            <div class="col-2 content-logo"><a href="/index.html"><img class="logo" src="../images/global/logo-tcs-site.svg" alt="Terminal Central del Sur"></a>
             </div>
             <div class="col-10">
               <nav class="menu">
@@ -58,48 +58,36 @@
     <section class="contact">
       <div class="container">
         <div class="row">
-          <ul>
-            <li class="col-4">
-              <div class="title-section">
-                <h2>Contacto</h2>
-              </div>
-              <p class="intro-section">Para ofrecer un mejor Servicio ponemos a su disposicion este espacio para sus comentarios.</p>
-              <form action="">
+          <div class="col-4">
+            <div class="title-section">
+              <h2>Contacto</h2>
+            </div>
+            <form action="">
+              <fieldset>
+                <legend>Para ofrecer un mejor Servicio ponemos a su disposicion este espacio para sus comentarios.</legend>
                 <ul class="form-contact">
                   <li> 
-                    <p>Nombre:</p>
-                  </li>
-                  <li>
-                    <input type="text">
+                    <label for="name"> Nombre:</label>
+                    <input id="name" type="text">
                   </li>
                   <li> 
-                    <p>Telefono:</p>
-                  </li>
-                  <li>
-                    <input type="text">
+                    <label for="tel">Telefono:</label>
+                    <input id="tel" type="text">
                   </li>
                   <li> 
-                    <p>Correo Electr&oacute;nico:</p>
+                    <label for="email">Correo Electr&oacute;nico:</label>
+                    <input id="email" type="email">
                   </li>
                   <li>
-                    <input type="text">
+                    <label for="type-message">Tipo de Mensaje:</label>
+                    <select id="type-message" name="">
+                      <option value="0">-Seleccionar-</option>
+                      <option value="1">-Queja-</option>
+                    </select>
                   </li>
                   <li> 
-                    <p>Tipo de Mensaje:</p>
-                  </li>
-                  <li>
-                    <div class="arrow">
-                      <select name="">
-                        <option value="0">-Seleccionar-</option>
-                        <option value="1">-Queja-</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li> 
-                    <p>Comentario: </p>
-                  </li>
-                  <li>
-                    <textarea name="" cols="30" rows="10"></textarea>
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="" cols="30" rows="10"></textarea>
                   </li>
                   <li>
                     <div class="notifications">
@@ -117,28 +105,28 @@
                     </div>
                   </li>
                 </ul>
-              </form>
-            </li>
-            <li class="col-8">
-              <div class="floating-panel"><b>Como llegar</b>
-                <select id="mode">
-                  <option value="SELECT">Seleccione una Opcion</option>
-                  <option value="DRIVING">En Auto</option>
-                  <option value="WALKING">A pie</option>
-                  <option value="TRANSIT">En Transporte Publico</option>
-                  <option value="BICYCLING">En Bicicleta</option>
-                </select>
-              </div>
-              <div class="map" id="map"></div>
-            </li>
-          </ul>
+              </fieldset>
+            </form>
+          </div>
+          <div class="col-8">
+            <div class="floating-panel"><b>Como llegar</b>
+              <select id="mode">
+                <option value="SELECT">Seleccione una Opcion</option>
+                <option value="DRIVING">En Auto</option>
+                <option value="WALKING">A pie</option>
+                <option value="TRANSIT">En Transporte Publico</option>
+                <option value="BICYCLING">En Bicicleta</option>
+              </select>
+            </div>
+            <div class="map" id="map"></div>
+          </div>
         </div>
       </div>
     </section>
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-3"><img src="../images/global/tcs.png" alt="Terminal Central del Sur"></div>
+          <div class="col-3"><img src="../images/global/logo-tcs-site.svg" alt="Terminal Central del Sur"></div>
           <div class="col-6">
             <p>Avenida Tasqueña #1320, Col. Campestre Churubusco CP 04200 </p>
             <ul>

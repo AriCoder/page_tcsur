@@ -1,6 +1,7 @@
 - var local_header={}
 - local_header['images']={}
-- local_header.images['logo']=global_path+images.global+'tcs.png'
+- local_header.images['logo']=global_path+images.global+'tcs.svg'
+- local_header.images['logo_tcs']=global_path+images.global+'logo-tcs-site.svg'
 - local_header.images['imagen1']=global_path+images.global+'tcs-home-background-image.jpg'
 header
   .main-header
@@ -31,10 +32,10 @@ header
         .col-2.content-logo
           if home
             h1
-              img.logo(src=local_header.images.logo, alt="Terminal Central del Sur")
+              img.logo(src=local_header.images.logo_tcs, alt="Terminal Central del Sur")
           else
             a(href="/index.html")
-              img.logo(src=local_header.images.logo, alt="Terminal Central del Sur")
+              img.logo(src=local_header.images.logo_tcs, alt="Terminal Central del Sur")
         .col-10
           nav.menu
             ul
