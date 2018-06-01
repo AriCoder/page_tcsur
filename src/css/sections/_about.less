@@ -3,6 +3,7 @@ section.about {
     .top {
         padding-top: 86px;
         position: relative;
+        min-height: 250px;
         .img {
             padding: 0;
             margin: 0;
@@ -12,42 +13,35 @@ section.about {
             width: 320px;
             height: 350px;
             overflow: hidden;
-            &:before {
+        }
+        .col-6{
+            position: relative;
+            &::after{
                 content: '';
-                width: 0px;
-                height: 0px;
-                border-left: 160px solid white;
-                /* left arrow slant */
-                border-right: 160px solid white;
-                /* right arrow slant */
-                border-bottom: 75px solid transparent;
-                /* bottom, add background color here */
+                position: absolute;
                 top: 0;
-                position: absolute;
-                margin-left: 0;
-            }
-            &:after {
-                content: '';
-                width: 0px;
-                height: 0px;
-                position: absolute;
-                border-left: 160px solid white;
-                border-right: 160px solid white;
-                border-top: 75px solid transparent;
-                bottom: 0px;
-                margin-left: 0;
                 left: 0;
+                width: 60%;
+                height: 2px;
+                background-color: @border-yellow;
+            }
+            &:last-child{
+                &::after{
+                    left: 30%;
+                    background-color: @border-olive;
+                }
             }
         }
         div:nth-of-type(2) {
-            border-top: 2px solid yellow;
+           // border-top: 2px solid yellow;
+
             p {
                 margin-right: 200px;
                 text-align: inherit;
             }
         }
         div:last-of-type {
-            border-top: 2px solid olive;
+           // border-top: 2px solid olive;
             h3 {
                 margin-left: 200px;
                 margin-right: 0;
@@ -60,9 +54,10 @@ section.about {
         }
     }
     .bottom {
-        border-left: 2px solid blue;
-        padding-top: 140px;
-        margin-left: 50%;
+        border-left: 2px solid @border-blue;
+        padding-top: 25px;
+        min-height: 170px;
+        margin-left: 49%;
         padding-left: 10px;
     }
 }

@@ -20,6 +20,16 @@ include ../config/_variables
   - var section_scripts =  {}
   - section_scripts['dev'] = [global_path  + scripts.base + 'script_1.js', global_path  + scripts.base + 'script_2.js']
   - section_scripts['prod'] = [global_path  + scripts.base + 'main.min.js']
+- var section_scripts =  {} 
+- section_scripts['dev'] = []
+- section_scripts['dev'].push( global_path  + scripts.libs + 'jquery.js')
+- section_scripts['dev'].push(global_path + scripts.base + 'main.js')
+
+- var local_about={}
+- local_about['images']={}
+- local_about.images['about']=global_path+images.about+'tcs-acerca-de-nosotros-valores.png'
+
+
 doctype html
 html(lang=site.lang)
   include ../template/_head
@@ -31,7 +41,7 @@ html(lang=site.lang)
           h2 Acerca de Nosotros
         .row.top
           .img
-            img(src="https://www.assistanceleague.org/temecula-valley/wp-content/uploads/sites/35/2017/09/Nonprofit-Partnerships-Logo-Name-copy.jpg" alt="")
+            img(src=local_about.images.about alt="Acerca de Nosotros")
           .col-6
             h3 Vision
             p Ser la empresa #1 de conectividad de pasajeros con el mejor servicio al cliente y al menor costo. 
@@ -41,7 +51,7 @@ html(lang=site.lang)
         .row.bottom
           h3 Proposito
           p Conectamos personas, familias y negocios ofreciendo las mejores alternativas de transporte.
-    section.advertisement
+    section.advertisement#seccion-scroll
       .container
         .title-section
           h2 Socios Comerciales

@@ -26,7 +26,36 @@ include config/_variables
 - section_scripts['dev'].push( global_path  + scripts.libs + 'jquery.js')
 - section_scripts['dev'].push( global_path  + scripts.libs + 'slick.js')
 - section_scripts['dev'].push(global_path + scripts.controllers + 'home.js')
+- section_scripts['dev'].push(global_path + scripts.base + 'main.js')
 - section_scripts['prod'] = []
+
+- var local_home={}
+- local_home['images']={}
+- local_home.images['slide_01']=global_path+images.home+'tcs-home-background-image.jpg'
+- local_home.images['slide_02']=global_path+images.home+'tcs-home-background-bus.jpg'
+- local_home.images['slide_03']=global_path+images.home+'tcs-home-background-viaje.jpg'
+
+- local_home.images['aers']=global_path+images.home+'tcs-home-grupo-estrella-roja-del-sur.png'
+- local_home.images['etn']=global_path+images.home+'tcs-home-etn.png'
+- local_home.images['aer_cuautla']=global_path+images.home+'tcs-home-autotransportes-estrella-roja.png'
+- local_home.images['pullman']=global_path+images.home+'tcs-home-pullman-de-morelos.png'
+- local_home.images['ado']=global_path+images.home+'tcs-home-ado.png'
+- local_home.images['aer_puebla']=global_path+images.home+'tcs-home-autotransportes-estrella-roja.png'
+- local_home.images['e_oro']=global_path+images.home+'tcs-home-estrella-de-oro.png'
+- local_home.images['e_blanca']=global_path+images.home+'tcs-home-estrella-blanca.png'
+- local_home.images['costenios']=global_path+images.home+'tcs-home-costenios.png'
+
+- local_home.images['aers_costa']=global_path+images.home+'tcs-home-costa-line.png'
+- local_home.images['aers_futura']=global_path+images.home+'tcs-home-futura.png'
+- local_home.images['aers_futura_plus']=global_path+images.home+'tcs-home-futura-plus.png'
+- local_home.images['aers_turistar']=global_path+images.home+'tcs-home-turistar-ejecutiva.png'
+
+- local_home.images['coex']=global_path+images.home+'tcs-home-empresas-coex.png'
+- local_home.images['css']=global_path+images.home+'tcs-home-empresas-css.png'
+- local_home.images['gct']=global_path+images.home+'tcs-home-empresas-gct.png'
+- local_home.images['tcs']=global_path+images.home+'tcs-home-empresas-tcs.png'
+
+- local_home.images['socio_tcs']=global_path+images.global+'tcs-logo-footer.svg'
 
 doctype html
 html(lang=site.lang)
@@ -36,18 +65,18 @@ html(lang=site.lang)
     include template/_header 
     section.slider
       .slide
-        img(src=local_header.images.imagen1)
+        img(src=local_home.images.slide_01)
         .container
           h3 Terminal Central del Sur es Vanguardia         
       .slide
-        img(src="https://content.vivaaerobus.com/Upload-VB/Banners/promo/Banner_90_descuento_promo_20180527.png")
+        img(src=local_home.images.slide_02)
         .container
           h3 Terminal Central del Sur es Vanguardia         
       .slide
-        img(src="https://autobusesaltamar.com.mx/images/bg/slide-descuentos-mayo-junio.jpg" )
+        img(src=local_home.images.slide_03)
         .container
-          h3            
-    section.lines
+          h3 Terminal Central del Sur es Vanguardia           
+    section.lines#seccion-scroll
       .lines-principal
         .container
           .title-section
@@ -55,52 +84,58 @@ html(lang=site.lang)
           ul.row                
             li.col-3  
               .top-article
-                img(src=local_header.images.logo_aers, alt="AERS")
+                img(src=local_home.images.aers alt="Autotransportes Estrella Roja del Sur")
               .bottom-article.active
                 p Autotransportes Estrella Roja del Sur (AERS)
                 span.icon-arrow-down   
             li.col-3    
               .top-article
-                img(src=local_header.images.logo_aers, alt="AERS")
+                img(src=local_home.images.etn alt="Enlaces Terrestres Nacionales")
               .bottom-article
                 p Enlaces Terrestres Nacionales (ETN)
                 span.icon-arrow-down   
             li.col-3    
               .top-article
-                img(src=local_header.images.logo_aers, alt="AERS")
+                img(src=local_home.images.aer_cuautla alt="Autotransportes Estrella Roja Cuautla")
               .bottom-article
-                p Enlaces Terrestres Nacionales (ETN)
+                p Autotransportes Estrella Roja Cuautla (AER)
                 span.icon-arrow-down    
             li.col-3   
               .top-article
-                img(src=local_header.images.logo_aers, alt="AERS")
+                img(src=local_home.images.pullman alt="Pullman de Morelos")
               .bottom-article
-                p Enlaces Terrestres Nacionales (ETN)
+                p Pullman de Morelos (PULLMAN)
                 span.icon-arrow-down                                
             li.col-3  
               .top-article
-                img(src=local_header.images.logo_aers, alt="AERS")
+                img(src=local_home.images.ado alt="Autobuses de Oriente")
               .bottom-article
-                p Enlaces Terrestres Nacionales (ETN)
+                p Autobuses de Oriente (ADO)
                 span.icon-arrow-down   
             li.col-3    
               .top-article
-                img(src=local_header.images.logo_aers, alt="AERS")
+                img(src=local_home.images.aer_puebla alt="Autotransportes Estrella Roja Puebla")
               .bottom-article
-                p Enlaces Terrestres Nacionales (ETN)
+                p Autotransportes Estrella Roja Puebla (AER)
                 span.icon-arrow-down   
             li.col-3    
               .top-article
-                img(src=local_header.images.logo_aers, alt="AERS")
+                img(src=local_home.images.e_oro alt="Estrella de Oro")
               .bottom-article
-                p Enlaces Terrestres Nacionales (ETN)
+                p Estrella de Oro (ORO)
                 span.icon-arrow-down    
             li.col-3   
               .top-article
-                img(src=local_header.images.logo_aers, alt="AERS")
+                img(src=local_home.images.e_blanca alt="Estrella Blanca")
               .bottom-article
-                p Enlaces Terrestres Nacionales (ETN)
-                span.icon-arrow-down                                
+                p Estrella Blanca (BLANCA)
+                span.icon-arrow-down 
+            li.col-3   
+              .top-article
+                img(src=local_home.images.costenios alt="Costeños")
+              .bottom-article
+                p Costeños (COTÑ)
+                span.icon-arrow-down                               
           .information-partner
             .row
               .col-4
@@ -147,21 +182,21 @@ html(lang=site.lang)
           .row
             .col-6
               .content-partner
-                img(src=local_header.images.logo_aers, alt="Terminal Central del Sur")
+                img(src=local_home.images.socio_tcs alt="Terminal Central del Sur")
                 h2 Terminal Central del Sur
                 p Ubicación Dirección	Calzada Taxqueña #1320, colonia Campestre Churubusco, teléfono (55) 5689-9745 Localidad	Coyoacán, Coat of arms of Mexican Federal District.svg Ciudad de México, Flag of Mexico.svg México Datos de la estación Conexiones	Tren ligero Metro Tasqueña Líneas A y K1 del Servicio de Transportes Eléctricos del Distrito Federal N.º de andenes	35 [editar
             .col-6
               ul.logo-partners
                 li
                   div
-                    img(src=local_header.images.logo, alt="Concesiones Exclusivas")
+                    img(src=local_home.images.coex alt="Concesiones Exclusivas")
                 li
                   div
-                    img(src=local_header.images.logo, alt="Grupo Comercial en Terminales")
+                    img(src=local_home.images.gct alt="Grupo Comercial en Terminales")
                 li
                   div
-                    img(src=local_header.images.logo, alt="Terminal Central del Sur")
+                    img(src=local_home.images.tcs alt="Terminal Central del Sur")
                 li
                   div
-                    img(src=local_header.images.logo, alt="Comercial Camionera del Sur")
+                    img(src=local_home.images.css alt="Comercial Camionera del Sur")
     include template/_footer

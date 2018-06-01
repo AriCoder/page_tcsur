@@ -29,7 +29,7 @@ var initMap=function(){
   var marker = new google.maps.Marker({
     position: tcsur,
     map: map,
-    icon: 'https://raw.githubusercontent.com/CodyHouse/custom-google-map/master/img/cd-icon-location.png'
+    icon: '../images/global/pin-tcs.png'
   });
   //se abre texto informativo
   infotcsur.open(map, marker);

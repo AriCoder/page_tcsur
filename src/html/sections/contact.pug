@@ -24,6 +24,7 @@ include ../config/_variables
 - section_scripts['dev'] = []
 - section_scripts['dev'].push( global_path  + scripts.libs + 'jquery.js')
 - section_scripts['dev'].push(global_path + scripts.controllers + 'contact.js')
+- section_scripts['dev'].push(global_path + scripts.base + 'main.js')
 - section_scripts['dev'].push('https://maps.googleapis.com/maps/api/js?key=AIzaSyCm0T60hpqdmQpfZ1eGyHuNg1hR4LVuhV8&callback=initMap')
 
 
@@ -79,4 +80,50 @@ html(lang=site.lang)
                 option(value="TRANSIT") En Transporte Publico
                 option(value="BICYCLING") En Bicicleta
             .map#map
+    section.advertisement#seccion-scroll
+      .container
+        .title-section
+          h2 Socios Comerciales
+        .row
+          .col-6.section-left
+            .col-6
+              a(href="#")
+                img(src="https://costaline.com.mx/wp-content/uploads/2016/06/guerrero.jpg", alt="")
+            .col-6
+              a(href="#")
+                img(src="https://costaline.com.mx/wp-content/uploads/2016/06/estadodemex.jpg", alt="")
+            .col-12
+              a(href="#")
+                img(src="https://content.vivaaerobus.com/Upload-VB/Banners/promo/Banner_90_descuento_promo_20180527.png", alt="")
+          .col-6.section-right
+            .col-6     
+              a(href="#")         
+                img(src="https://futura.com.mx/assets/futura/images/futura/city-22e71e60fe.png", alt="")
+            .col-6
+              a(href="#")
+                img(src="https://costaline.com.mx/wp-content/uploads/2016/06/taxco_1.jpg", alt="")
+            .col-6
+              a(href="#")
+                img(src="https://content.vivaaerobus.com/Upload-VB/home/block/Block_tarjeta-Scotia_180216.png", alt="")
+        .row
+          .col-6.section-right
+            .col-6   
+              a(href="#")           
+                img(src="https://paquetes.viajamas.com/_lib/iamsa/img/4.jpg", alt="")
+            .col-6
+              a(href="https://www.vivaaerobus.com/mx")
+                img(src="https://content.vivaaerobus.com/Upload-VB/home/block/mascota-es.png", alt="")
+            .col-6
+              a(href="#")
+                img(src="http://www.grupo-iamsa.com.mx/img/cetram.jpg", alt="")
+          .col-6.section-left
+            .col-6
+              a(href="#")
+                img(src="http://www.grupo-iamsa.com.mx/img/nuevas-rutas.jpg", alt="")
+            .col-6
+              a(href="#")
+                img(src="http://www.grupo-iamsa.com.mx/img/viajamas.png", alt="")
+            .col-12
+              a(href="#")
+                img(src="https://costaline.com.mx/wp-content/uploads/2017/08/05.jpg", alt="") 
     include ../template/_footer
