@@ -951,7 +951,6 @@ section.partner {
 }
 .information-partner {
   display: none;
-  margin: 0 0 0 -10px;
   padding: 18px 10px 18px 10px;
   background: #1C3268;
   text-align: left;
@@ -1109,7 +1108,7 @@ section.about .top div:last-of-type p {
 }
 section.about .bottom {
   border-left: 2px solid blue;
-  padding-top: 75px;
+  padding-top: 140px;
   margin-left: 50%;
   padding-left: 10px;
 }
